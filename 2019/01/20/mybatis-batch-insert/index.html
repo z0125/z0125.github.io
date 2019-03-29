@@ -108,23 +108,25 @@
 
 
 
-  <meta name="description" content="记录生活点滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zshany">
-<meta property="og:url" content="http://blog.zshany.com/archives/2018/11/index.html">
+  <meta name="description" content="摘要：Mybatis-Mysql批量插入实现 dao 批量插入方法1int batchInsert( @Param(&amp;quot;list&amp;quot;) List&amp;lt;Demo&amp;gt; demoList); mapper.xml 批量插入SQL配置12345678910111213&amp;lt;insert id=&amp;quot;batchInsert&amp;quot; parameterType=&amp;quot;j">
+<meta name="keywords" content="mybatis,mysql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mybatis-Mysql批量插入">
+<meta property="og:url" content="http://blog.zshany.com/2019/01/20/mybatis-batch-insert/index.html">
 <meta property="og:site_name" content="zshany">
-<meta property="og:description" content="记录生活点滴">
+<meta property="og:description" content="摘要：Mybatis-Mysql批量插入实现 dao 批量插入方法1int batchInsert( @Param(&amp;quot;list&amp;quot;) List&amp;lt;Demo&amp;gt; demoList); mapper.xml 批量插入SQL配置12345678910111213&amp;lt;insert id=&amp;quot;batchInsert&amp;quot; parameterType=&amp;quot;j">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-29T15:53:59.627Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zshany">
-<meta name="twitter:description" content="记录生活点滴">
+<meta name="twitter:title" content="Mybatis-Mysql批量插入">
+<meta name="twitter:description" content="摘要：Mybatis-Mysql批量插入实现 dao 批量插入方法1int batchInsert( @Param(&amp;quot;list&amp;quot;) List&amp;lt;Demo&amp;gt; demoList); mapper.xml 批量插入SQL配置12345678910111213&amp;lt;insert id=&amp;quot;batchInsert&amp;quot; parameterType=&amp;quot;j">
 
 
 
 
 
 
-  <link rel="canonical" href="http://blog.zshany.com/archives/2018/11/">
+  <link rel="canonical" href="http://blog.zshany.com/2019/01/20/mybatis-batch-insert/">
 
 
 
@@ -134,7 +136,7 @@
   };
 </script>
 
-  <title>归档 | zshany</title>
+  <title>Mybatis-Mysql批量插入 | zshany</title>
   
 
 
@@ -183,7 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -275,7 +277,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -296,25 +298,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -340,78 +323,209 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.zshany.com/2019/01/20/mybatis-batch-insert/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zshany">
+      <meta itemprop="description" content="记录生活点滴">
+      <meta itemprop="image" content="/imgs/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zshany">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/11/26/hexo-build/" itemprop="url">
-              
-                <span itemprop="name">Hexo搭建教程</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Mybatis-Mysql批量插入
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T00:34:05+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-01-20 20:30:35" itemprop="dateCreated datePublished" datetime="2019-01-20T20:30:35+08:00">2019-01-20</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 23:53:59" itemprop="dateModified" datetime="2019-03-29T23:53:59+08:00">2019-03-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/code/" itemprop="url" rel="index"><span itemprop="name">code</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>摘要：Mybatis-Mysql批量插入实现</p>
+<h5 id="dao-批量插入方法"><a href="#dao-批量插入方法" class="headerlink" title="dao 批量插入方法"></a>dao 批量插入方法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int batchInsert( @Param(&quot;list&quot;) List&lt;Demo&gt; demoList);</span><br></pre></td></tr></table></figure>
+<h5 id="mapper-xml-批量插入SQL配置"><a href="#mapper-xml-批量插入SQL配置" class="headerlink" title="mapper.xml 批量插入SQL配置"></a>mapper.xml 批量插入SQL配置</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;insert id=&quot;batchInsert&quot; parameterType=&quot;java.util.List&quot;&gt;</span><br><span class="line">    INSERT INTO t_demo</span><br><span class="line">    &lt;trim prefix=&quot;(&quot; suffix=&quot;)&quot; suffixOverrides=&quot;,&quot;&gt;</span><br><span class="line">        id, name</span><br><span class="line">    &lt;/trim&gt;</span><br><span class="line">    &lt;trim prefix=&quot;VALUES &quot; suffixOverrides=&quot;,&quot;&gt;</span><br><span class="line">        &lt;foreach collection=&quot;list&quot; item=&quot;var&quot; separator=&quot;,&quot;&gt;</span><br><span class="line">            &lt;trim prefix=&quot;(&quot; suffix=&quot;)&quot; suffixOverrides=&quot;,&quot;&gt;</span><br><span class="line">                #&#123;var.id&#125;, #&#123;var.name&#125;,</span><br><span class="line">            &lt;/trim&gt;</span><br><span class="line">        &lt;/foreach&gt;</span><br><span class="line">    &lt;/trim&gt;</span><br><span class="line">&lt;/insert&gt;</span><br></pre></td></tr></table></figure>
+      
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mybatis/" rel="tag"># mybatis</a>
+          
+            <a href="/tags/mysql/" rel="tag"># mysql</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/01/linux-base-command/" rel="next" title="Linux 常用命令">
+                <i class="fa fa-chevron-left"></i> Linux 常用命令
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/29/java-file-export-encode/" rel="prev" title="JavaWeb附件导出中文乱码处理">
+                JavaWeb附件导出中文乱码处理 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -432,8 +546,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -515,6 +638,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#dao-批量插入方法"><span class="nav-number">1.</span> <span class="nav-text">dao 批量插入方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#mapper-xml-批量插入SQL配置"><span class="nav-number">2.</span> <span class="nav-text">mapper.xml 批量插入SQL配置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -662,6 +801,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
